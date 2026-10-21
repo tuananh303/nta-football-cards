@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0c1410">
+  <meta name="description" content="Bộ sưu tập bóng đá: thẻ cầu thủ, áo đấu, poster chữ ký và tượng cầu thủ.">
+  <title>Bộ Sưu Tập Bóng Đá</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <script src="/js/theme.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Be+Vietnam+Pro:wght@400;500;600&display=swap&subset=vietnamese" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body data-page="public">
+  <a class="skip" href="#main">Bỏ qua tới nội dung</a>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="Bộ Sưu Tập Bóng Đá, trang chủ">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-name">Bộ Sưu Tập Bóng Đá</span>
+    </a>
+    <nav class="tabs" aria-label="Chuyển trang">
+      <a href="#" data-view="collection">Bộ sưu tập</a>
+      <a href="#thong-ke" data-view="stats">Thống kê</a>
+    </nav>
+    <div class="topbar-actions">
+      <span class="actions-slot" id="topbarActions"></span>
+      <button class="btn icon-only ghost theme-toggle" id="themeToggle" type="button" aria-label="Đổi giao diện sáng / tối"></button>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1"></main>
+
+  <!-- Hộp xem chi tiết thẻ -->
+  <dialog class="sheet detail" id="detailDialog" aria-labelledby="detailTitle"></dialog>
+  <!-- Phóng to ảnh -->
+  <dialog class="zoom" id="zoomDialog" aria-label="Phóng to ảnh thẻ"></dialog>
+
+  <div class="toasts" id="toasts" role="status" aria-live="polite" popover="manual"></div>
+
+  <script type="module" src="/js/app.js"></script>
+</body>
+</html>

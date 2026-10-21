@@ -1,0 +1,9 @@
+node_modules/
+.env
+uploads/
+data/
+*.log
+.DS_Store
+Thumbs.db
+.claude/
+logs/
